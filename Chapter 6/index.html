@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Forms</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    
+    <!-- Custom CSS -->
+    <style type="text/css">
+    .switch.disabled {
+      opacity: 0.25;
+      pointer-events: none; // Prevents click events from working
+    }
+    </style>
+  </head>
+  <body>
+    
+    <div class="row">
+    <br/>
+    <br/>
+      <div class="large-8 large-offset-2 small-12 columns">
+          <form>
+            <div class="row">
+              <div class="small-6 columns">
+                <input type="text" placeholder="First Name" />
+              </div>
+              <div class="small-6 columns">
+                <input type="text" placeholder="Last Name"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Select Place
+                  <select>
+                    <option value="husker">Alabama</option>
+                    <option value="starbuck">Alaska</option>
+                    <option value="hotdog">Arizona</option>
+                    <option value="apollo">California</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Add comment
+                  <textarea placeholder="Write something"></textarea>
+                </label>
+              </div>
+            </div>
+
+            <!-- Radio elements and Checkboxes -->
+            <div class="row">
+              <div class="large-6 small-6 columns">
+                <label>Gender</label>
+                <input type="radio" name="gender" value="male" id="maleRadio"><label for="maleRadio">Male</label>
+                <input type="radio" name="gender" value="female" id="femaleRadio"><label for="femaleRadio">Female</label>
+              </div>
+              <div class="large-6 small-6 columns">
+                  <label>Preferred Color</label>
+                  
+                <input id="blueCheckbox" type="checkbox"><label for="blueCheckbox">Blue</label>
+                <input id="redCheckbox" type="checkbox"><label for="redCheckbox">Red</label>
+              </div>
+            </div>
+
+            <!-- Prefix and Postfix Input Fields -->
+            <div class="row">
+              <div class="small-6 columns">
+                <div class="row collapse">
+                  <label>Price</label>
+                  <div class="small-3 columns">
+                    <span class="prefix">$</span>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="Enter Amount" />
+                  </div>
+                </div>
+              </div>
+              <div class="small-6 columns">
+                <div class="row collapse">
+                  <label>Domain name</label>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="example" />
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inline Label and Input Field -->
+            <div class="row">
+              <div class="small-3 columns">
+                <label for="nameField" class="right inline">Enter Name</label>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" id="nameField" placeholder="John Doe" />
+              </div>
+            </div>
+
+            <!-- Specifying an error state --> 
+            <div class="row">
+              <div class="small-12 columns">
+                <label>Name
+                  <input type="text" class="error" placeholder="Name" />
+                </label>
+                <small class="error">Invalid entry</small>
+              </div>
+            </div>
+
+            <!-- Switch using Checkbox -->
+            <div class="row">
+              <div class="small-6 small-offset-3 columns">
+                <div class="switch">
+                  <input id="exampleCheckboxSwitch" type="checkbox">
+                  <label for="exampleCheckboxSwitch"></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Radio Switches of various shapes and sizes -->
+            <div class="row">
+              <div class="small-6 small-offset-3 columns">
+                <label>Tiny Switch</label>
+                <div class="switch tiny">
+                  <input id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+                  <label for="exampleRadioSwitch1"></label>
+                </div> 
+
+                <label>Small Switch</label>
+                <div class="switch small">
+                  <input id="exampleRadioSwitch2" type="radio" name="testGroup">
+                  <label for="exampleRadioSwitch2"></label>
+                </div> 
+
+                <label>Large Switch</label>
+                <div class="switch large">
+                  <input id="exampleRadioSwitch3" type="radio" name="testGroup">
+                  <label for="exampleRadioSwitch3"></label>
+                </div>
+
+                <label>Radius + Large Switch</label>
+                <div class="switch large radius">
+                  <input id="exampleRadioSwitch4" type="radio" name="testGroup">
+                  <label for="exampleRadioSwitch4"></label>
+                </div>
+
+                <label>Round + Large Switch</label>
+                <div class="switch large round">
+                  <input id="exampleRadioSwitch5" type="radio" name="testGroup">
+                  <label for="exampleRadioSwitch5"></label>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Disabled Radio Switch Element -->
+            <div class="row">
+              <div class="small-6 small-offset-3 columns">
+                <div class="switch large round disabled">
+                  <input id="exampleRadioSwitch6" type="radio" disabled="" name="testGroup">
+                  <label for="exampleRadioSwitch6"></label>
+                </div>
+
+              </div>
+            </div>
+          </form>
+          
+          <!-- Abide Validation Example-->
+            <form data-abide>
+                <div class="name-field">
+                    <label>Your name
+                        <input type="text" required/>
+                    </label>
+                    <small class="error">Name is required and must be a string.</small>
+                </div>
+                <div class="email-field">
+                    <label>Email
+                        <input type="email" required/>
+                    </label>
+                    <small class="error">An email address is required.</small>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+      </div>
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.abide.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

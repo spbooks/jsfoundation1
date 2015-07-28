@@ -1,0 +1,25 @@
+.header {
+	height: 100%;
+	background: url("http://placehold.it/1920x1080") center no-repeat;
+}
+
+.header .row {
+	padding-top: 30%;
+	color: #ffffff;
+}
+
+.section .row {
+	margin-top: 50px;
+}
+
+.separator .row {
+	margin-top: 50px;
+	padding-top: 50px;
+	color: #ffffff;
+}
+
+.separator {
+	max-width: 100%;
+	min-height: 50%;
+	background-color: #cccccc;
+}

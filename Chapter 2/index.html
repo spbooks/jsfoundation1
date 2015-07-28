@@ -1,0 +1,67 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Grid System</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class="row">
+  		<div class="large-6 medium-4 small-12 column" style="background: #aaaaaa; height: 100px;">
+  			Column 1
+  		</div>
+  		<div class="large-6 medium-8 small-12 column" style="background: #cccccc; height: 100px;">
+  			Column 2
+  		</div>
+  	</div>
+
+    <div class="row">
+      <div class="large-2 column" style="background: #bbbbbb;height: 100px;">
+        Column 3
+      </div>
+      <div class="large-7 column" style="background: #dddddd;height: 100px;">
+        Column 4
+      </div>
+      <div class="large-3 column" style="background: #aaaaaa;height: 100px;">
+        Column 5
+      </div>
+    </div>
+
+    <!-- Nested Column -->
+
+    <div class="row">
+      <div class="large-6 column" style="background: #aaaaaa;height: 100px;">
+        Column 1
+        <div class="row">
+          <div class="large-8 column" style="background: #888;height: 60px;">
+            Nested Column 1
+          </div>
+          <div class="large-4 column" style="background: #999;height: 60px;">
+            Nested Column 2
+          </div>
+        </div>
+      </div>
+      <div class="large-6 column" style="background: #cccccc;height: 100px;">
+        Column 2
+      </div>
+    </div>
+      
+      <!-- Offset Column -->
+
+    <div class="row">
+      <div class="large-6 large-offset-3 column" style="background: #ddd;height: 200px; margin-top: 50px;">
+            Hello World.
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
